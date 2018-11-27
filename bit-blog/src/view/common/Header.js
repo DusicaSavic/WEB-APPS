@@ -7,8 +7,9 @@ const Header = () => {
             <div className="nav-wrapper">
                 <h1 style={{ margin: 0 }} className="brand-logo"> BIT BLOG</h1>
                 <ul id="nav-mobile" className="right hide-on-med-and-down">
-                    <li><Link to='/'>Homeee</Link></li>
-                    <li><Link to='/blogs'>BlogList</Link></li>
+                    <li><Link to='/'>Home</Link></li>
+                    <li><Link to='/authors'>Authors</Link></li>
+                    <li><Link to='/about'>About</Link></li>
                 </ul>
             </div>
         </nav>

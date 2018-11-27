@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { BlogList } from './BlogList'
-import { SingleAuthor } from './partials/author/SingleAuthor';
+import { Author } from './partials/author/Author';
 import { About } from './partials/about/About'
 import { Switch, Route } from "react-router-dom"
 
@@ -12,8 +12,9 @@ class Main extends Component {
 
         return (
             <Switch>
-                <Route path='/blogs' component={BlogList} />
-                <Route path='/single' component={SingleAuthor} />
+                <Route path='/about' component={About} />
+                <Route path='/authors' component={Author} />
+                <Route path='/' component={BlogList} />
             </Switch>
         );
     }
